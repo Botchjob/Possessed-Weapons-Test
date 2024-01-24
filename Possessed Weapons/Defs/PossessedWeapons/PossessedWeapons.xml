@@ -1,0 +1,1356 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThingDef Name="BotchJob_PossessedWeapon" ParentName="BaseWeapon" Abstract="True">
+    <techLevel>Medieval</techLevel>
+    <tradeNeverStack>true</tradeNeverStack>
+    <relicChance>3</relicChance>
+	<thingCategories>
+	<li>BotchJob_Possessedweapons</li>
+	</thingCategories>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <notifyMapRemoved>true</notifyMapRemoved>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+	<ThingCategoryDef>
+		<defName>BotchJob_Possessedweapons</defName>
+		<label>possessed weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+
+
+ <!--=============================== Melee ================================-->
+
+ <!--=============================== Scourgeblade ================================-->
+
+
+  <ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedScourgeBlade</defName>
+    <label>scourgeblade</label>
+    <description>An ominous looking sword with a blackened, warped blade.\n\nIts blade appears to emanate a foul substance and will cause toxic buildup in those struck by it.\n\nDue to the vile nature of this weapon, it will negatively effect the wielder's social interactions slightly.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <Mass>4</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	<TradePriceImprovement>-0.2</TradePriceImprovement>
+	<NegotiationAbility>-0.2</NegotiationAbility>
+	<SocialImpact>-0.1</SocialImpact>
+	</equippedStatOffsets>
+    <equippedAngleOffset>-60</equippedAngleOffset>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/Equipment/WeaponMelee/ScourgeBlade</texPath>
+	<drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconScale>1.1</uiIconScale>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+	<li>BotchJob_PossessedScourgeBlade</li>
+	</weaponTags>
+	
+  <comps>
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        <nameMaker>BotchJob_WeaponNamerScourgeBlade</nameMaker>
+      </li>
+  </comps>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>BotchJob_ToxicStab</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>BotchJob_ToxicCut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+<!--=============================== Glacial Cleaver ================================-->
+
+
+  <ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedGlacialCleaver</defName>
+    <label>glacial cleaver</label>
+    <description>A vicious axe with a blade composed of pure, unmelting ice.\n\nIn addition to physical damage it will also cause frostbite buildup on hit.\n\nDue to the constant cold aura surrounding this weapon, the wielder will be less comfortable the cold but much more tolerant to high temperatures.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <Mass>6</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	<ComfyTemperatureMin>5</ComfyTemperatureMin>
+	<ComfyTemperatureMax>10</ComfyTemperatureMax>
+	</equippedStatOffsets>
+ 	<equippedAngleOffset>-60</equippedAngleOffset>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/Equipment/WeaponMelee/GlacialCleaver</texPath>
+	<drawSize>1.1</drawSize>
+    </graphicData>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+	<weaponTags>
+	<li>BotchJob_PossessedGlacialCleaver</li>
+	</weaponTags>
+  <comps>
+	<li>
+       	  <compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        <nameMaker>BotchJob_WeaponNamerGlacialCleaver</nameMaker>
+      </li>
+  </comps>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>BotchJob_FrostCut</li>
+        </capacities>
+        <power>28</power>
+        <cooldownTime>2.2</cooldownTime>
+      <extraMeleeDamages>
+          <li>
+            <def>Frostbite</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+<!--=============================== Sanctified Sword ================================-->
+
+
+<ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedSanctifiedSword</defName>
+    <label>sanctified sword</label>
+    <description>A grandiose sword bestowed upon only the most valorous of knights, sworn to uphold justice and protect the weak.\n\nThis sword carries a divine blessing, allowing the wielder to withstand more damage and heal from their injuries faster.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <Mass>6</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+	<InjuryHealingFactor>0.2</InjuryHealingFactor>
+	</equippedStatOffsets>
+    <equippedAngleOffset>-60</equippedAngleOffset>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/Equipment/WeaponMelee/SanctifiedSword</texPath>
+	<drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconScale>1.1</uiIconScale>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+	<li>BotchJob_PossessedSanctifiedSword</li>
+	</weaponTags>
+  <comps>
+	<li>
+        <compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        <nameMaker>BotchJob_WeaponNamerSanctifiedSword</nameMaker>
+      </li>
+  </comps>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+<!-- ==================== Volcanic Maul =================== -->
+
+
+  <ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedVolcanicMaul</defName>
+    <label>volcanic maul</label>
+    <description>An immense warhammer with a head composed of volcanic rock.\n\nIt is slow to swing but inflicts both physical and fire damage.\n\nDue to the constant heat emitted from this weapon, the wielder will be less comfortable in high temperatures but much more tolerant to the cold.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+     <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/VolcanicMaul</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>1.2</drawSize>
+    </graphicData>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+	<statBases>
+       <MarketValue>3000</MarketValue>
+      <Mass>10</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+	<ComfyTemperatureMax>-5</ComfyTemperatureMax>
+	</equippedStatOffsets>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+	 <comps>
+	<li>
+        <compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        <nameMaker>BotchJob_WeaponNamerVolcanicMaul</nameMaker>
+      </li>
+  </comps>
+	<weaponTags>
+	<li>BotchJob_PossessedVolcanicMaul</li>
+	</weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>28</power>
+        <cooldownTime>3</cooldownTime>
+	<extraMeleeDamages>
+		<li>
+		  <def>Flame</def>
+		<amount>10</amount>
+		</li>
+	</extraMeleeDamages>
+      </li>
+    </tools>
+     </ThingDef>
+
+
+<!-- ==================== Craghammer =================== -->
+
+  
+  <ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedCraghammer</defName>
+    <label>craghammer</label>
+    <description>A jagged hammer forged from rock with diamond shards protruding from its surface.\n\nThis weapon very much excels at breaking things, destroying walls and structures with ease. In addition, it can also be used as a mining tool, improving the mining speed and yield of the wielder.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Craghammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <statBases>
+	<MarketValue>3000</MarketValue>
+      <Mass>8</Mass>
+    </statBases>
+	<equippedStatOffsets>
+	<MiningSpeed>0.2</MiningSpeed>
+	<MiningYield>0.2</MiningYield>
+	</equippedStatOffsets>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+	<weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+	<weaponTags>
+	<li>BotchJob_PossessedCraghammer</li>
+	</weaponTags>
+	 <comps>
+	<li>
+        <compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        <nameMaker>BotchJob_WeaponNamerCraghammer</nameMaker>
+      </li>
+  </comps>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+	<!--=============================== Scythe ================================-->
+
+
+  <ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedBloodstainedScythe</defName>
+    <label>bloodstained scythe</label>
+    <description>A large, deadly scythe stained red with blood. It is slow to swing but against living targets, it will cause extreme bleeding. The immense bloodloss caused by this weapon makes it difficult to capture enemies alive.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <Mass>5</Mass>
+    </statBases>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/Equipment/WeaponMelee/BloodstainedScythe</texPath>
+	<drawSize>1.3</drawSize>
+    </graphicData>
+	<uiIconScale>1.1</uiIconScale>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+	<weaponTags>
+	<li>BotchJob_PossessedBloodstainedScythe</li>
+	</weaponTags>
+	
+  <comps>
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        <nameMaker>BotchJob_WeaponNamerScourgeBlade</nameMaker>
+      </li>
+  </comps>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>BotchJob_BloodCut</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>4</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+<!--=============================== Ranged ================================-->
+
+<!--=============================== Dragonfire Greatbow ================================-->
+
+  
+ <ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedDragonfireGreatbow</defName>
+    <label>dragonfire greatbow</label>
+    <description>A fabled greatbow said to be infused with the strength of a dragon. It is very large and cumbersome but is capable of firing devastating dragonfire arrows to blast and scorch a small area.\n\nDue to the weight and unwieldiness of this weapon, it is slower to fire and re-arm in comparison to a regular bow and will decrease the movement speed of the wielder.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <tickerType>Normal</tickerType>
+   <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/DragonfireGreatbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>1.2</drawSize>
+    </graphicData>
+<soundInteract>Bow_Large</soundInteract>
+    <statBases>
+	<MarketValue>3000</MarketValue>
+      <Mass>15</Mass>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	<MoveSpeed>-0.6</MoveSpeed>
+	</equippedStatOffsets>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<thingCategories>
+	<li>WeaponsRanged</li>
+	</thingCategories>
+	<weaponTags>
+	<li>BotchJob_PossessedDragonfireGreatbow</li>
+	</weaponTags>
+  <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BotchJob_DragonfireArrow</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>30</range>
+	<forcedMissRadius>1.2</forcedMissRadius>
+        <soundCast>Bow_Large</soundCast>
+	<muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+  </verbs>
+   <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>4</cooldownTime>
+      </li>
+   </tools>
+    <comps>
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        	<nameMaker>BotchJob_WeaponNamerDragonfireGreatbow</nameMaker>
+      	</li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>BotchJob_DragonfireArrow</defName>
+    <label>dragonfire arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/DragonfireArrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>BotchJob_DragonfireArrow</damageDef>
+     <ai_IsIncendiary>true</ai_IsIncendiary>
+      <explosionRadius>2</explosionRadius>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+
+    <DamageDef Name="BotchJob_DragonfireArrow">
+    	<defName>BotchJob_DragonfireArrow</defName>
+	<workerClass>DamageWorker_Flame</workerClass>
+	<label>flame</label>
+	<hasForcefulImpact>true</hasForcefulImpact>
+	<makesBlood>true</makesBlood>
+	<canInterruptJobs>true</canInterruptJobs>
+	<externalViolence>true</externalViolence>
+	<deathMessage>{0} has burned to death.</deathMessage>
+		<hediff>Burn</hediff>
+	<armorCategory>Heat</armorCategory>
+	<minDamageToFragment>15</minDamageToFragment>
+	<defaultDamage>25</defaultDamage>
+	<defaultArmorPenetration>0</defaultArmorPenetration>
+	<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+	<explosionCellFleck>BlastFlame</explosionCellFleck>
+	<explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+	<explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+	<soundExplosion>BotchJob_FieryImpact</soundExplosion>
+	<combatLogRules>Damage_Flame</combatLogRules>
+	<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+
+</DamageDef>
+
+
+<!--=============================== Lightning Javelin ================================-->
+
+
+ <ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedLightningJavelin</defName>
+    <label>lightning javelin</label>
+    <description>A large, lightning infused spear that is deadly in close quarters but can also be thrown to produce an EMP burst on impact.\n\nThe electricity coursing through this weapon will energize its wielder, increasing their movement speed. The downside of this is that being constantly energized makes it difficult to sleep and as such, the wielder's rest rate will be slower.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <tickerType>Normal</tickerType>
+   <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/LightningJavelin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>1.1</drawSize>
+    </graphicData>
+	<statBases>
+	<MarketValue>3000</MarketValue>
+      <Mass>8</Mass>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	<RestRateMultiplier>-0.2</RestRateMultiplier>
+	<MoveSpeed>0.2</MoveSpeed>
+	</equippedStatOffsets>
+	<weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+	<weaponTags>
+	<li>BotchJob_PossessedLightningJavelin</li>
+	</weaponTags>
+  <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BotchJob_LightningJavelinThrown</defaultProjectile>
+        <warmupTime>1.35</warmupTime>
+        <range>25</range>
+	<forcedMissRadius>1.2</forcedMissRadius>
+        <soundCast>Power_OnSmall</soundCast>
+      </li>
+  </verbs>
+	<comps>
+      
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        	<nameMaker>BotchJob_WeaponNamerLightningJavelin</nameMaker>
+      	</li>
+	</comps>
+   <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>28</power>
+        <cooldownTime>2.6</cooldownTime>
+	<armorPenetration>0.5</armorPenetration>
+	<extraMeleeDamages>
+		<li>
+			<def>EMP</def>
+			<amount>9</amount>
+		</li>
+	</extraMeleeDamages>
+      </li>
+   </tools>
+  </ThingDef>
+
+<ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>BotchJob_LightningJavelinThrown</defName>
+    <label>lightning javelin</label>
+    <graphicData>
+      <texPath>Things/Projectile/LightningJavelinThrown</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>1.6</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>BotchJob_LightningBlast</damageDef>
+     <ai_IsIncendiary>true</ai_IsIncendiary>
+      <explosionRadius>2</explosionRadius>
+      <speed>20</speed>
+    </projectile>
+  </ThingDef>
+
+
+<!--=============================== Archmage Staff ================================-->
+
+
+<ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedArchmageStaff</defName>
+    <label>archmage staff</label>
+    <description>An extravagant, ornate staff capable of firing a barrage of magic projectiles. It is very slow to charge up and wildly inaccurate but can decimate large groups of enemies.\n\nDue to its slow charge time and ineffectiveness as a melee weapon, it will leave the caster vulnerable.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ArchmageStaff</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>1.2</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <Mass>5</Mass>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+	   <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+	<li>BotchJob_PossessedArchmageStaff</li>
+	</weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BotchJob_ArchmageStaffBolt</defaultProjectile>
+        <forcedMissRadius>6</forcedMissRadius>
+        <warmupTime>6.5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>25</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+	<soundAiming>BotchJob_ArchmageStaffCharge</soundAiming>
+        <soundCast>BotchJob_ArchmageStaffCast</soundCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+   <comps>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	<li Class="CompProperties_GeneratedName">
+        	<nameMaker>BotchJob_WeaponNamerArchmageStaff</nameMaker>
+      	</li>
+    </comps>
+ </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>BotchJob_ArchmageStaffBolt</defName>
+    <label>archmage staff bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/ArchmageStaffBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>BotchJob_ArchmageStaffBolt</damageDef>
+     <ai_IsIncendiary>true</ai_IsIncendiary>
+      <explosionRadius>2</explosionRadius>
+      <speed>20</speed>
+    </projectile>
+  </ThingDef>
+
+    <DamageDef Name="BotchJob_ArchmageStaffBolt">
+    	<defName>BotchJob_ArchmageStaffBolt</defName>
+	<workerClass>DamageWorker_Flame</workerClass>
+	<label>flame</label>
+	<hasForcefulImpact>true</hasForcefulImpact>
+	<makesBlood>true</makesBlood>
+	<canInterruptJobs>true</canInterruptJobs>
+	<externalViolence>true</externalViolence>
+	<deathMessage>{0} has burned to death.</deathMessage>
+		<hediff>Burn</hediff>
+	<armorCategory>Heat</armorCategory>
+	<minDamageToFragment>15</minDamageToFragment>
+	<defaultDamage>18</defaultDamage>
+	<defaultArmorPenetration>0</defaultArmorPenetration>
+	<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+	<explosionCellFleck>BlastFlame</explosionCellFleck>
+	<explosionColorCenter>(0.2, 0.5, 1)</explosionColorCenter>
+	<explosionColorEdge>(0.2, 0.5, 0.8)</explosionColorEdge>
+	<soundExplosion>BotchJob_FieryImpact</soundExplosion>
+	<combatLogRules>Damage_Flame</combatLogRules>
+	<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+
+</DamageDef>
+
+
+<!--=============================== Automaton Crossbow ================================-->
+
+
+<ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedAutomatonCrossbow</defName>
+    <label>automaton crossbow</label>
+    <description>An intricate, steam powered crossbow forged from the remains of some kind of ancient automaton.\n\nOn activation, it fires three armor piercing bolts in quick succession but is slow to reload.\n\nJust holding this technological marvel will make its wielder feel smarter, perhaps this is a placebo effect but the increased confidence will improve their research speed regardless.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AutomatonCrossbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>0.9</drawSize>
+    </graphicData>
+   	<soundInteract>Bow_Large</soundInteract>
+    <statBases>
+	<MarketValue>3000</MarketValue>
+      <Mass>8</Mass>
+      <AccuracyTouch>0.86</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.54</AccuracyLong>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <ResearchSpeed>0.25</ResearchSpeed>
+    </equippedStatOffsets>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+	<li>BotchJob_PossessedAutomatonCrossbow</li>
+	</weaponTags>
+	 <comps>
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        	<nameMaker>BotchJob_WeaponNamerAutomatonCrossbow</nameMaker>
+      	</li>
+    </comps>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BotchJob_AutomatonCrossbowBolt</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>28</range>
+        <soundCast>BotchJob_AutomatonCrossbowFire</soundCast>
+	 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+	<stopBurstWithoutLos>false</stopBurstWithoutLos>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>BotchJob_AutomatonCrossbowBolt</defName>
+    <label>automaton bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/AutomatonCrossbowBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>ArrowHighVelocity</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+
+<!--=============================== Verdant Bow ================================-->
+
+
+<ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedVerdantBow</defName>
+    <label>verdant bow</label>
+    <description>A majestic longbow crafted from the branch of a mythical, ancient tree.\n\nHolding this weapon will make the wielder feel more in tune with nature, improving their plant work speed and yield.\n\nIn addition, the bow is capable of producing sweet berries, increasing the amount of nutrition that can be foraged during long caravan journeys.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/VerdantBow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Recurve</soundInteract>
+    <statBases>
+	<MarketValue>3000</MarketValue>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	<PlantWorkSpeed>0.2</PlantWorkSpeed>
+	<PlantHarvestYield>0.2</PlantHarvestYield>
+	<ForagedNutritionPerDay>3</ForagedNutritionPerDay>
+	</equippedStatOffsets>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+	<weaponTags>
+	<li>BotchJob_PossessedPossessedVerdantBow</li>
+	</weaponTags>
+	 <comps>
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        	<nameMaker>BotchJob_WeaponNamerVerdantBow</nameMaker>
+      	</li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BotchJob_VerdantBowArrow</defaultProjectile>
+        <warmupTime>1.45</warmupTime>
+        <range>26</range>
+        <soundCast>Bow_Recurve</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <rotateInShelves>false</rotateInShelves>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>BotchJob_VerdantBowArrow</defName>
+    <label>verdant bow arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/VerdantBowArrow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>ArrowHighVelocity</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>1.2</stoppingPower>
+      <speed>54</speed>
+    </projectile>
+  </ThingDef>
+
+
+<!--=============================== Gilded Arquebus ================================-->
+ 
+
+ <ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedGildedArquebus</defName>
+    <label>gilded arquebus</label>
+    <description>A finely crafted black powder rifle with a matchlock firing mechanism.\n\nIt fires a single, long range shot with enough velocity to easily penetrate most conventional armor but is very slow to reload once fired.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/GildedArquebus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <statBases>
+	<MarketValue>3000</MarketValue>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>6.5</RangedWeapon_Cooldown>
+    </statBases>
+	<weaponTags>
+	<li>BotchJob_PossessedGildedArquebus</li>
+	</weaponTags>
+	 <comps>
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        	<nameMaker>BotchJob_WeaponNamerGildedArquebus</nameMaker>
+      	</li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BotchJob_ArquebusBullet</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>40</range>
+        <soundCast>BotchJob_ArquebusShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>BotchJob_ArquebusBullet</defName>
+    <label>arquebus bullet</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>28</damageAmountBase>
+	   <armorPenetrationBase>0.9</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/BotchJob_ArquebusBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+
+<!--=============================== Shrouded Dagger ================================-->
+
+
+ <ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedShroudedDagger</defName>
+    <label>shrouded dagger</label>
+    <description>A deadly dagger favoured by assassins and rogues.\n\nIn skilled hands it can deliver a lightning fast flurry of stabs and slashes and can also be thrown short distances, ideal for finishing off fleeing opponents.\n\nIt allows the wielder to remain light on their feet, increasing their melee dodge chance and reducing the chances of them triggering hidden traps.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+   <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ShroudedDagger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<uiIconScale>1.1</uiIconScale>
+	 <equippedAngleOffset>-60</equippedAngleOffset>
+	<statBases>
+	<MarketValue>3000</MarketValue>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedStatOffsets>
+	<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
+	<MeleeDodgeChance>0.2</MeleeDodgeChance>
+	</equippedStatOffsets>
+	<weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+	<weaponTags>
+	<li>BotchJob_PossessedShroudedDagger</li>
+	</weaponTags>
+  <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BotchJob_ShroudedDaggerThrown</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>15</range>
+        <soundCast>ThrowGrenade</soundCast>
+      </li>
+  </verbs>
+	<comps>
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        	<nameMaker>BotchJob_WeaponNamerShroudedDagger</nameMaker>
+      	</li>
+	</comps>
+   <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.2</cooldownTime>
+	<armorPenetration>0.5</armorPenetration>
+      </li>
+<li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+   </tools>
+  </ThingDef>
+
+<ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>BotchJob_ShroudedDaggerThrown</defName>
+    <label>shrouded dagger</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShroudedDaggerThrown</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+     <damageDef>RangedStab</damageDef>
+	<damageAmountBase>20</damageAmountBase>
+	<stoppingPower>0.5</stoppingPower>
+	<armorPenetrationBase>0.10</armorPenetrationBase>
+	<speed>26</speed>
+    </projectile>
+  </ThingDef>
+
+
+<!--=============================== Acolyte Staff ================================-->
+
+
+<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedAcolyteStaff</defName>
+    <label>acolyte staff</label>
+    <description>An gnarled, ancient staff capable of firing a beam of pure energy that melts armor and scorches flesh.\n\nIt is slow to charge and ineffective at short range, leaving the caster vulnerable.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AcolyteStaff</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1.2</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>3</Mass>
+	<MarketValue>3000</MarketValue>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+    </statBases>
+	<weaponTags>
+	<li>BotchJob_PossessedAcolyteStaff</li>
+	</weaponTags>
+	<comps>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	<li Class="CompProperties_GeneratedName">
+        	<nameMaker>BotchJob_WeaponNamerArchmageStaff</nameMaker>
+      	</li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_ShootBeam</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>3</warmupTime>
+        <range>26</range>
+        <minRange>3.9</minRange>
+        <beamFullWidthRange>10</beamFullWidthRange>
+        <burstShotCount>10</burstShotCount>
+        <beamWidth>6</beamWidth>
+        <ticksBetweenBurstShots>22</ticksBetweenBurstShots>
+        <beamDamageDef>BotchJob_StaffBeam</beamDamageDef>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <soundCastBeam>BeamGraser_Shooting</soundCastBeam>
+        <beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+        <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+        <beamMaxDeviation>2</beamMaxDeviation>
+        <beamCurvature>0.6</beamCurvature>
+        <beamMoteDef>BotchJob_BeamBase</beamMoteDef>
+        <beamEndEffecterDef>BotchJob_Beam_End</beamEndEffecterDef>
+        <beamChanceToStartFire>0.85</beamChanceToStartFire>
+        <beamChanceToAttachFire>0.85</beamChanceToAttachFire>
+        <beamFireSizeRange>0.55~0.85</beamFireSizeRange>
+        <beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
+        <beamStartOffset>0.2</beamStartOffset>
+        <beamLineFleckChanceCurve>
+          <points>
+            <li>(0, 0)</li>
+            <li>(0.65, 0.4)</li>
+            <li>(1, 0.75)</li>
+          </points>
+        </beamLineFleckChanceCurve>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<DamageDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>BotchJob_StaffBeam</defName>
+    <label>beam</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been beamed to death.</deathMessage>
+    <hediff>BeamWound</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <defaultDamage>16</defaultDamage>
+    <defaultArmorPenetration>0.5</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>0.4</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>0.2</buildingDamageFactorPassable>
+  </DamageDef>
+
+ <!--=============================== Ghostly Flintlock ================================-->
+
+<ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedGhostlyFlintlock</defName>
+    <label>ghostly flintlock</label>
+    <description>An old pistol with a flintlock firing mechanism. It is covered in strange, clouded crystals that are cold to the touch.\n\nIt fires a short range spread of crystal shards that cause a sudden but short-lived bout of violent illness in those struck.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/GhostlyFlintlock</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <statBases>
+	<MarketValue>3000</MarketValue>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+	<weaponTags>
+	<li>BotchJob_PossessedGhostlyFlintlock</li>
+	</weaponTags>
+	 <comps>
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        	<nameMaker>BotchJob_WeaponNamerScourgeBlade</nameMaker>
+      	</li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BotchJob_GhostlyShard</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>15</range>
+	<forcedMissRadius>3</forcedMissRadius>
+	 <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>BotchJob_ArquebusShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>15</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>Handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>Crystal blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>BotchJob_GhostlyShard</defName>
+    <label>ghostly shard</label>
+    <graphicData>
+      <texPath>Things/Projectile/BotchJob_GhostBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>BotchJob_GhostBlast</damageDef>
+      <explosionRadius>1</explosionRadius>
+      <speed>35</speed>
+    </projectile>
+  </ThingDef>
+ 
+
+<!--=============================== Gauntlet ================================-->
+
+<ThingDef ParentName="BotchJob_PossessedWeapon">
+    <defName>BotchJob_PossessedEarthenGauntlet</defName>
+    <label>earthen gauntlet</label>
+    <description>A heavy gauntlet imbued with earth magic.\n\nWhen used as a melee weapon, it can deliver devastating strikes that have a chance to stun. It also has the ability to conjure and launch a heavy boulder over a short distance, inflicting blunt damage and kicking up dust to blind and slow those stuck.\n\nThis weapon is possessed by an ancient spirit and will exhibit some of their traits. The spirit will bond with the first person to wield it and thereafter, refuse to be wielded by anyone else.\n\nWhen wielded by the bonded person, the spirit will augment their combat abilities, allowing them to attack with greater ferocity, speed and accuracy than ever before.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/EarthenGauntlet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	    <equippedAngleOffset>-20</equippedAngleOffset>
+	<tickerType>Normal</tickerType>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+	<MarketValue>3000</MarketValue>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.7</AccuracyShort>
+      <AccuracyMedium>0.6</AccuracyMedium>
+      <AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<weaponTags>
+	<li>BotchJob_PossessedEarthenGauntlet</li>
+	</weaponTags>
+	 <comps>
+	<li>
+        	<compClass>CompQuality</compClass>
+      	</li>
+	 <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+	<li Class="CompProperties_GeneratedName">
+        	<nameMaker>BotchJob_WeaponNamerCraghammer</nameMaker>
+      	</li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BotchJob_RockSmash</defaultProjectile>
+        <warmupTime>4</warmupTime>
+        <range>18</range>
+	<forcedMissRadius>1.2</forcedMissRadius>
+        <soundCast>Interact_BeatFire</soundCast>
+	<soundAiming>BotchJob_ArchmageStaffCharge</soundAiming>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>15</muzzleFlashScale>
+			<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>Fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.3</cooldownTime>
+	 <extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>3</amount>
+            <chance>0.5</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>BotchJob_RockSmash</defName>
+    <label>boulder</label>
+    <graphicData>
+      <texPath>Things/Projectile/BotchJob_RockSmash</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	<drawSize>1.3</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>BotchJob_RockSmash</damageDef>
+      <explosionRadius>2.7</explosionRadius>
+	  <arcHeightFactor>1.2</arcHeightFactor>
+      <speed>18</speed>
+	  <shadowSize>1.5</shadowSize>
+    </projectile>
+  </ThingDef>
+ 
+
+</Defs>

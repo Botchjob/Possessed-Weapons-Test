@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+<!--=============================== Frost Impact Sound ================================-->
+
+<ImpactSoundTypeDef>
+<defName>BotchJob_FrostImpact</defName>
+<playOnlyIfHitPawn>true</playOnlyIfHitPawn>
+<soundDef>BotchJob_FrostImpact</soundDef>
+</ImpactSoundTypeDef>
+
+<SoundDef>
+<defName>BotchJob_FrostImpact</defName>
+<context>MapOnly</context>
+<maxSimultaneous>2</maxSimultaneous>
+<subSounds>
+     <li>
+	<grains>
+	  <li Class="AudioGrain_Folder">
+	  <clipFolderPath>Impact/BotchJob_FrostImpact</clipFolderPath>
+          </li>
+	</grains>
+        <volumeRange>10</volumeRange>
+	<pitchRange>0.9~1.1</pitchRange>
+     </li>
+</subSounds>
+</SoundDef>
+
+<!--=============================== Frost Impact Effect ================================-->
+
+<EffecterDef>
+    <defName>BotchJob_FrostImpact</defName>
+       <children>
+	<li>
+		<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+		<moteDef>BotchJob_FrostImpact</moteDef>
+		<positionRadius>0.1</positionRadius>
+		<burstCount>3</burstCount>
+		<scale>1~1.4</scale>
+		<spawnLocType>OnSource</spawnLocType>
+	</li>
+      </children>
+</EffecterDef>
+
+ <ThingDef ParentName="MoteBase">
+    <defName>BotchJob_FrostImpact</defName>
+	<altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+    <fadeInTime>0.04</fadeInTime>
+	<solidTime>0.03</solidTime>
+	<fadeOutTime>1</fadeOutTime>
+    </mote>
+    <graphicData>
+      <drawSize>2</drawSize>
+      <texPath>Things/Mote/FrostImpact</texPath>
+    </graphicData>
+  </ThingDef>
+
+
+<!--=============================== Blood Impact Sound ================================-->
+
+<ImpactSoundTypeDef>
+<defName>BotchJob_BloodImpact</defName>
+<playOnlyIfHitPawn>true</playOnlyIfHitPawn>
+<soundDef>BotchJob_BloodImpact</soundDef>
+</ImpactSoundTypeDef>
+
+<SoundDef>
+<defName>BotchJob_BloodImpact</defName>
+<context>MapOnly</context>
+<maxSimultaneous>2</maxSimultaneous>
+<subSounds>
+     <li>
+	<grains>
+	  <li Class="AudioGrain_Clip">
+	  <clipPath>Impact/BotchJob_BloodImpact</clipPath>
+          </li>
+	</grains>
+        <volumeRange>10</volumeRange>
+	<pitchRange>0.9~1.1</pitchRange>
+     </li>
+</subSounds>
+</SoundDef>
+
+<!--=============================== Blood Impact Effect ================================-->
+
+<EffecterDef>
+    <defName>BotchJob_BloodImpact</defName>
+       <children>
+	<li>
+		<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+		<moteDef>BotchJob_BloodImpact</moteDef>
+		<positionRadius>0.1</positionRadius>
+		<burstCount>3</burstCount>
+		<scale>1~1.4</scale>
+		<spawnLocType>OnSource</spawnLocType>
+	</li>
+      </children>
+</EffecterDef>
+
+ <ThingDef ParentName="MoteBase">
+    <defName>BotchJob_BloodImpact</defName>
+	<altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+    <fadeInTime>0.04</fadeInTime>
+	<solidTime>0.03</solidTime>
+	<fadeOutTime>1</fadeOutTime>
+    </mote>
+    <graphicData>
+      <drawSize>2</drawSize>
+      <texPath>Things/Mote/BloodImpact</texPath>
+    </graphicData>
+  </ThingDef>
+
+<!--=============================== Fiery Impact Sound ================================-->
+
+
+<SoundDef>
+<defName>BotchJob_FieryImpact</defName>
+<context>MapOnly</context>
+<maxSimultaneous>2</maxSimultaneous>
+<subSounds>
+     <li>
+	<grains>
+	  <li Class="AudioGrain_Folder">
+	  <clipFolderPath>Explosion/BotchJob_FieryImpact</clipFolderPath>
+          </li>
+	</grains>
+        <volumeRange>25</volumeRange>
+	<pitchRange>0.9~1.1</pitchRange>
+     </li>
+</subSounds>
+</SoundDef>
+
+<!--=============================== Staff Sounds ================================-->
+
+<SoundDef>
+<defName>BotchJob_ArchmageStaffCast</defName>
+<context>MapOnly</context>
+<maxSimultaneous>1</maxSimultaneous>
+<subSounds>
+     <li>
+	<grains>
+	  <li Class="AudioGrain_Clip">
+	  <clipPath>Misc/BotchJob_ArchmageStaffCast</clipPath>
+          </li>
+	</grains>
+        <volumeRange>25</volumeRange>
+	<pitchRange>0.9~1.1</pitchRange>
+     </li>
+</subSounds>
+</SoundDef>
+
+<SoundDef>
+    <defName>BotchJob_ArchmageStaffCharge</defName>
+    <context>MapOnly</context>
+    <sustain>True</sustain>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Misc/BotchJob_ArchmageStaffCharge</clipPath>
+          </li>
+        </grains>
+        <volumeRange>10</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <sustainLoop>False</sustainLoop>
+        <sustainIntervalRange>0.2~0.7</sustainIntervalRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BotchJob_AutomatonCrossbowFire</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Misc/BotchJob_AutomatonCrossbowFire</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>60.70111~77.30627</volumeRange>      
+        <pitchRange>0.6976015~0.7769372</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+<!--=============================== Gun Sounds ================================-->
+
+<SoundDef>
+<defName>BotchJob_ArquebusShot</defName>
+<context>MapOnly</context>
+<maxSimultaneous>1</maxSimultaneous>
+<subSounds>
+     <li>
+	<grains>
+	  <li Class="AudioGrain_Folder">
+	  <clipFolderPath>Misc/BotchJob_ArquebusShot</clipFolderPath>
+          </li>
+	</grains>
+        <volumeRange>25</volumeRange>
+	<pitchRange>0.9~1.1</pitchRange>
+     </li>
+</subSounds>
+</SoundDef>
+
+<!--=============================== Staff Effects ================================-->
+
+
+<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="MoteBase">
+    <defName>BotchJob_BeamBase</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.2</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+      <rotateTowardsTarget>True</rotateTowardsTarget>
+      <scaleToConnectTargets>True</scaleToConnectTargets>
+      <fadeOutUnmaintained>True</fadeOutUnmaintained>
+    </mote>
+    <drawOffscreen>true</drawOffscreen>
+    <graphicData>
+      <texPath>Things/Mote/BotchJob_StaffBeam</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/BotchJob_BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/BotchJob_BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>-4 </_ScrollSpeedA>
+        <_ScrollSpeedB>3</_ScrollSpeedB>
+        <_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+ <FleckDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="FleckBase_Thrown">
+    <defName>BotchJob_Beam_Glow</defName>
+    <altitudeLayer>LightingOverlay</altitudeLayer>
+    <fadeInTime>0.01</fadeInTime>
+    <solidTime>0.105</solidTime>
+    <fadeOutTime>0.04</fadeOutTime>
+    <graphicData>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <texPath>Things/Mote/BeamGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>6</drawSize>
+      <color>(0.8, 0.1, 0.8, 0.75)</color>
+    </graphicData>
+  </FleckDef>
+
+<EffecterDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>BotchJob_Beam_End</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>Smoke</fleckDef>
+        <chancePerTick>0.4</chancePerTick>
+        <scale>0.6~1.1</scale>
+        <spawnLocType>OnSource</spawnLocType>
+        <absoluteAngle>true</absoluteAngle>
+        <angle>30~70</angle>
+        <speed>0.2~0.35</speed>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <positionRadius>0.1</positionRadius>
+        <moteDef>Mote_SparkThrownFast</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <chancePerTick>0.9</chancePerTick>
+        <speed>3.3~5</speed>
+        <scale>0.1~0.2</scale>
+        <angle>88~104</angle>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <positionRadius>0.1</positionRadius>
+        <spawnLocType>OnSource</spawnLocType>
+        <fleckDef>BotchJob_Beam_Glow</fleckDef>
+        <chancePerTick>0.5</chancePerTick>
+        <scale>0.8</scale>
+      </li>
+    </children>
+  </EffecterDef>
+
+
+ 
+</Defs>

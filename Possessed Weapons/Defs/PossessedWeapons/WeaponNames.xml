@@ -1,0 +1,926 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>BotchJob_WeaponNamerScourgeBlade</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_weapon_name(p=2)->[B] [D]</li>
+      <li>r_weapon_name(p=2)->[A] of [B]</li>
+	   <li>r_weapon_name(p=1)->[B]</li>
+ 	<li>r_weapon_name(p=2)->[C][D]</li>
+
+	<li>A->bringer</li>
+	<li>A->avatar</li>
+	<li>A->harbinger</li>
+	<li>A->symbol</li>
+	<li>A->bearer</li>
+	<li>A->savior</li>
+	<li>A->augury</li>
+	<li>A->herald</li>
+	<li>A->auspice</li>
+	<li>A->manifestation</li>
+	<li>A->embodiment</li>
+	<li>A->incarnation</li>
+	<li>A->visage</li>
+	<li>A->fragment</li>
+	<li>A->aspect</li>
+	<li>A->facet</li>
+	<li>A->remnant</li>
+	<li>A->shard</li>
+	<li>A->servant</li>
+	<li>A->scion</li>
+	<li>A->heir</li>
+
+        <li>B->blight</li>
+        <li>B->death</li>
+        <li>B->pestilence</li>
+        <li>B->corruption</li>
+        <li>B->decay</li>
+        <li>B->misery</li>
+	<li>B->putrescence</li>
+	<li>B->ruin</li>
+	<li>B->rot</li>
+	<li>B->atrophy</li>
+	<li>B->desolation</li>
+	<li>B->dread</li>
+	<li>B->woe</li>
+	<li>B->anguish</li>
+	<li>B->misfortune</li>
+	<li>B->despair</li>
+	<li>B->malaise</li>
+	<li>B->malice</li>
+
+	<li>C->curse</li>
+	<li>C->plague</li>
+	<li>C->bane</li>
+	<li>C->curse</li>
+	<li>C->omen</li>
+	<li>C->affliction</li>
+
+        <li>D->keeper</li>
+        <li>D->bringer</li>
+        <li>D->sender</li>
+        <li>D->giver</li>
+        <li>D->maker</li>
+        <li>D->bearer</li>
+	<li>D->weaver</li>
+	<li>D->speaker</li>
+	<li>D->whisperer</li>
+	<li>D->singer</li>
+
+	</rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+<RulePackDef>
+    <defName>BotchJob_WeaponNamerGlacialCleaver</defName>
+    <rulePack>
+      <rulesStrings>
+      <li>r_weapon_name(p=2)->[A] of [B]</li>
+	   <li>r_weapon_name(p=1)->[B]</li>
+ 	<li>r_weapon_name(p=2)->[C] [D]</li>
+
+	<li>A->bringer</li>
+	<li>A->avatar</li>
+	<li>A->harbinger</li>
+	<li>A->bearer</li>
+	<li>A->symbol</li>
+	<li>A->savior</li>
+	<li>A->augury</li>
+	<li>A->herald</li>
+	<li>A->auspice</li>
+	<li>A->manifestation</li>
+	<li>A->embodiment</li>
+	<li>A->incarnation</li>
+	<li>A->visage</li>
+	<li>A->fragment</li>
+	<li>A->aspect</li>
+	<li>A->facet</li>
+	<li>A->remnant</li>
+	<li>A->shard</li>
+	<li>A->servant</li>
+	<li>A->scion</li>
+	<li>A->heir</li>
+
+        <li>B->winter</li>
+	<li>B->frost</li>
+	<li>B->cold</li>
+	<li>B->ice</li>
+	<li>B->hoarfrost</li>
+	<li>B->rime</li>
+	<li>B->mist</li>
+
+	<li>C->icy</li>
+         <li>C->cold</li>
+        <li>C->chilling</li>
+	<li>C->frigid</li>
+	  <li>C->wintry</li>
+        <li>C->frozen</li>
+	 <li>C->bitter</li>
+	 <li>C->freezing</li>
+	<li>C->numbing</li>
+	<li>C->boreal</li>
+        
+	<li>D->bite</li>
+	<li>D->embrace</li>
+	<li>D->hold</li>
+	<li>D->touch</li>
+	<li>D->sting</li>
+	<li>D->grasp</li>
+	<li>D->clasp</li>
+	<li>D->charge</li>
+	<li>D->onslaught</li>
+	<li>D->end</li>
+	<li>D->reaver</li>
+	<li>D->slayer</li>
+	<li>D->render</li>
+	<li>D->divider</li>
+	<li>D->lacerator</li>
+	<li>D->carver</li>
+	<li>D->sunderer</li>
+	<li>D->eviscerator</li>
+
+	</rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+<RulePackDef>
+    <defName>BotchJob_WeaponNamerDragonfireGreatbow</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_weapon_name(p=2)->[A] [B]</li>
+      <li>r_weapon_name(p=1)->[B]</li>
+	<li>r_weapon_name(p=2)->[A] [C]</li>
+
+        <li>A->dragon's</li>
+	<li>A->red dragon's</li>
+	<li>A->black dragon's</li>
+	<li>A->blue dragon's</li>
+	<li>A->green dragon's</li>
+	<li>A->white dragon's</li>
+	<li>A->bronze dragon's</li>
+        <li>A->wyrm's</li>
+        <li>A->drake's</li>
+        <li>A->broodmother's</li>
+        <li>A->serpent's</li>
+        <li>A->scion's</li>                                
+        <li>A->wyvern's</li>
+        <li>A->draconic</li>
+        <li>A->dragon kin's</li>
+	  <li>A->matriarch's</li>
+	<li>A->dragon lord's</li>
+	<li>A->wyrm king's</li>
+
+	<li>B->pride</li>
+	<li>B->fury</li>
+	<li>B->rage</li>
+	<li>B->ire</li>
+	<li>B->ferocity</li>
+	<li>B->honor</li>
+	<li>B->ardor</li>
+	<li>B->resolve</li>
+	<li>B->purpose</li>
+	<li>B->virtue</li>
+	<li>B->rampage</li>
+	<li>B->fervor</li>
+	<li>B->zeal</li>
+	<li>B->valor</li>
+	<li>B->triumph</li>
+	<li>B->oath</li>
+	<li>B->might</li>
+	<li>B->vengeance</li>
+	<li>B->glory</li>
+	<li>B->reverence</li>
+  
+	<li>C->claw</li>
+	<li>C->roar</li>
+	<li>C->tail</li>
+	<li>C->fang</li>
+	<li>C->flame</li>
+	<li>C->breath</li>
+	<li>C->maw</li>
+	<li>C->tooth</li>
+	<li>C->gaze</li>
+
+	</rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+<RulePackDef>
+    <defName>BotchJob_WeaponNamerLightningJavelin</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_weapon_name(p=2)->[A] [B]</li>
+      <li>r_weapon_name(p=1)->[B]</li>
+	   <li>r_weapon_name(p=2)->[B] [D]</li>
+	<li>r_weapon_name(p=2)->[C][D]</li>
+
+        <li>A->forceful</li>
+        <li>A->ancient</li>
+        <li>A->enduring</li>
+      <li>A->ceaseless</li>
+        <li>A->mighty</li>                                
+        <li>A->stellar</li>
+        <li>A->shining</li>
+	  <li>A->ferocious</li>
+	<li>A->unforgiving</li>
+	<li>A->surging</li>
+	<li>A->tenacious</li>
+	<li>A->shining</li>
+	<li>A->indomitable</li>
+	<li>A->boundless</li>
+	<li>A->everlasting</li>
+	<li>A->eternal</li>
+	<li>A->unending</li>
+	<li>A->undying</li>
+	<li>A->blinding</li>
+	<li>A->relentless</li>
+	<li>A->unyielding</li>
+	<li>A->ruthless</li>
+	<li>A->infallible</li>
+
+	<li>B->storm</li>
+	<li>B->tempest</li>
+	<li>B->cyclone</li>
+	<li>B->gale</li>
+	<li>B->whirlwind</li>
+	<li>B->squall</li>
+	<li>B->maelstrom</li>
+	<li>B->hurricane</li>
+	<li>B->typhoon</li>
+	<li>B->tornado</li>
+	<li>B->thunder</li>
+	<li>B->invocation</li>
+	<li>B->echo</li>
+
+	<li>C->shock</li>
+	<li>C->bolt</li>
+	<li>C->jolt</li>
+	<li>C->surge</li>
+	<li>C->static</li>
+	<li>C->arc</li>
+
+       <li>D->keeper</li>
+        <li>D->bringer</li>
+        <li>D->giver</li>
+        <li>D->maker</li>
+        <li>D->bearer</li>
+        <li>D->revealer</li>
+	<li>D->weaver</li>
+	<li>D->shaper</li>
+	<li>D->binder</li>
+	<li>D->speaker</li>
+	<li>D->whisperer</li>
+	<li>D->singer</li>
+	<li>D->caller</li>
+
+
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<RulePackDef>
+    <defName>BotchJob_WeaponNamerArchmageStaff</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_weapon_name(p=2)->[A] [B]</li>
+      <li>r_weapon_name(p=1)->[B]</li>
+	   <li>r_weapon_name(p=2)->[B] [C]</li>
+
+       
+        <li>A->ancient</li>
+        <li>A->glyphic</li>
+        <li>A->magnificent</li>
+        <li>A->exalted</li>
+        <li>A->silent</li>                                
+        <li>A->stellar</li>
+        <li>A->shining</li>
+	  <li>A->obscure</li>
+	<li>A->arcane</li>
+	<li>A->lost</li>
+	<li>A->grand</li>
+	<li>A->opulent</li>
+	<li>A->glorious</li>
+	<li>A->shining</li>
+	<li>A->brilliant</li>
+	<li>A->boundless</li>
+	<li>A->everlasting</li>
+	<li>A->mysterious</li>
+	<li>A->eternal</li>
+	<li>A->unending</li>
+	<li>A->illustrious</li>
+	<li>A->sublime</li>
+	<li>A->majestic</li>
+	<li>A->venerable</li>
+	<li>A->peculiar</li>
+	<li>A->obscure</li>
+	<li>A->occult</li>
+	<li>A->esoteric</li>
+
+	<li>B->soul</li>
+	<li>B->resplendence</li>
+	<li>B->enigma</li>
+	<li>B->wisdom</li>
+	<li>B->essence</li>
+	<li>B->vision</li>
+	<li>B->prophecy</li>
+	<li>B->revelation</li>
+	<li>B->perception</li>
+	<li>B->brilliance</li>
+	<li>B->reflection</li>
+	<li>B->divination</li>
+	<li>B->augury</li>
+	<li>B->auspice</li>
+	<li>B->premonition</li>
+	<li>B->acumen</li>
+	<li>B->echo</li>
+	<li>B->phenomenon</li>
+	<li>B->marvel</li>
+	<li>B->foresight</li>
+	<li>B->splendor</li>
+	<li>B->knowledge</li>
+	<li>B->insight</li>
+	<li>B->effulgence</li>
+	<li>B->reverence</li>
+	<li>B->anomaly</li>
+       
+	<li>C->keeper</li>
+        <li>C->bringer</li>
+        <li>C->maker</li>
+        <li>C->bearer</li>
+        <li>C->revealer</li>
+	<li>C->weaver</li>
+	<li>C->shaper</li>
+	<li>C->speaker</li>
+	<li>C->whisperer</li>
+	<li>C->singer</li>
+	<li>C->caller</li>
+
+
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<RulePackDef>
+    <defName>BotchJob_WeaponNamerSanctifiedSword</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_weapon_name(p=2)->[A] [B]</li>
+      <li>r_weapon_name(p=1)->[B]</li>
+	   <li>r_weapon_name(p=2)->[A] [C]</li>
+	  <li>r_weapon_name(p=2)->[C] of [B]</li>
+
+        <li>A->divine</li>
+        <li>A->sacred</li>
+        <li>A->heavenly</li>
+        <li>A->holy</li>
+        <li>A->exalted</li>
+	<li>A->heroic</li>  
+        <li>A->angelic</li>                                
+        <li>A->hallowed</li>
+	  <li>A->blessed</li>
+	<li>A->deific</li>
+	<li>A->gallant</li>
+	<li>A->reverent</li>
+	<li>A->immaculate</li>
+	<li>A->glorious</li>
+	<li>A->shining</li>
+	<li>A->noble</li>
+	  <li>A->golden</li>
+	<li>A->boundless</li>
+	<li>A->everlasting</li>
+	<li>A->eternal</li>
+	<li>A->unending</li>
+	<li>A->illustrious</li>
+	<li>A->transcendant</li>
+	<li>A->consecrated</li>
+	<li>A->venerable</li>
+	<li>A->righteous</li>
+	<li>A->devout</li>
+	<li>A->dutiful</li>
+
+	<li>B->incandescence</li>
+	<li>B->zeal</li>
+	<li>B->truth</li>
+	<li>B->light</li>
+	<li>B->valor</li>
+	<li>B->resolution</li>
+	<li>B->heroism</li>
+	<li>B->duty</li>
+	<li>B->retribution</li>
+	<li>B->redemption</li>
+	<li>B->fortitude</li>
+	<li>B->resolve</li>
+	<li>B->purpose</li>
+	<li>B->resolve</li>
+	<li>B->virtue</li>
+	<li>B->honor</li>
+	<li>B->devotion</li>
+	<li>B->radiance</li>
+	<li>B->valiance</li>
+	<li>B->deliverence</li>
+	<li>B->clemency</li>
+	<li>B->faith</li>
+	<li>B->favor</li>
+	<li>B->grace</li>
+	<li>B->reverence</li>
+	<li>B->absolution</li>
+	<li>B->mercy</li>
+
+	<li>C->guardian</li>
+	<li>C->protector</li>  
+	<li>C->warden</li>    
+	<li>C->herald</li>     
+	<li>C->champion</li>  
+	<li>C->defender</li>  
+	<li>C->custodian</li>  
+	<li>C->sentinel</li>  
+	<li>C->spirit</li> 
+	<li>C->blade</li> 
+	<li>C->edge</li> 
+	<li>C->brand</li> 
+	<li>C->vow</li> 
+	<li>C->oath</li> 
+
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<RulePackDef>
+    <defName>BotchJob_WeaponNamerAutomatonCrossbow</defName>
+    <rulePack>
+      <rulesStrings>
+      <li>r_weapon_name(p=2)->[A] [B]</li>
+	   <li>r_weapon_name(p=1)->[C]</li>
+ 	<li>r_weapon_name(p=2)->[A] [C]</li>
+
+	<li>A->bronze</li>
+	<li>A->brass</li>
+	<li>A->clockwork</li>
+	<li>A->burnished</li>
+	<li>A->refined</li>
+	<li>A->ceremonial</li>
+	<li>A->mechanical</li>
+	<li>A->forged</li>
+	<li>A->machined</li>
+	<li>A->automatic</li>
+	<li>A->machina</li>
+	<li>A->plated</li>
+	<li>A->reclaimed</li>
+	<li>A->recovered</li>
+	<li>A->repurposed</li>
+	<li>A->sovereign</li>
+	<li>A->autonomous</li>
+	<li>A->relentless</li>
+	<li>A->gilded</li>
+	<li>A->kinetic</li>
+	<li>A->steamforged</li>
+	<li>A->antique</li>
+	<li>A->botched</li>
+	<li>A->unsound</li>
+	<li>A->unstable</li>
+	<li>A->volatile</li>
+	<li>A->erratic</li>
+	<li>A->eccentric</li>
+	<li>A->anomalous</li>
+
+        <li>B->artifact</li>
+	<li>B->heirloom</li>
+	<li>B->armament</li>
+	<li>B->repeater</li>
+	<li>B->ballista</li>
+	<li>B->instrument</li>
+	<li>B->prototype</li>
+	<li>B->striker</li>
+	<li>B->bolter</li>
+	<li>B->assaulter</li>
+	<li>B->ordnance</li>
+	<li>B->stinger</li>
+	<li>B->bastion</li>
+	<li>B->blaster</li>
+	<li>B->arbalest</li>
+	<li>B->gyro</li>
+	<li>B->slinger</li>
+	<li>B->dispatcher</li>
+	<li>B->suppressor</li>
+	<li>B->boltcaster</li>
+	
+	<li>C->equalizer</li>
+	<li>C->executioner</li>
+	<li>C->barrager</li>
+	<li>C->bombarder</li>
+	<li>C->broadsider</li>
+	<li>C->harpooner</li>
+	<li>C->skewerer</li>
+	<li>C->onslaught</li>
+	<li>C->blitzer</li>
+
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+<RulePackDef>
+    <defName>BotchJob_WeaponNamerVolcanicMaul</defName>
+    <rulePack>
+      <rulesStrings>
+      <li>r_weapon_name(p=2)->[A] [B]</li>
+	   <li>r_weapon_name(p=1)->[B]</li>
+ 	<li>r_weapon_name(p=2)->[A] [C]</li>
+
+	<li>A->fiery</li>
+	<li>A->magma</li>
+	<li>A->blazing</li>
+	<li>A->obsidian</li>
+	<li>A->searing</li>
+	<li>A->scorching</li>
+	<li>A->burning</li>
+	<li>A->flameforged</li>
+	<li>A->flaming</li>
+	<li>A->incinerating</li>
+	<li>A->incendiary</li>
+	<li>A->burning</li>
+	<li>A->smoldering</li>
+	<li>A->lava</li>
+	<li>A->pyroclastic</li>
+	<li>A->scalding</li>
+	<li>A->blistering</li>
+	<li>A->broiling</li>
+	<li>A->ashen</li>
+	<li>A->molten</li>
+	<li>A->engulfing</li>
+	
+
+        <li>B->inferno</li>
+	<li>B->conflagration</li>
+	<li>B->firestorm</li>
+	<li>B->ember</li>
+	<li>B->cinder</li>
+	<li>B->fissure</li>
+	<li>B->brimstone</li>
+	<li>B->combustion</li>
+	<li>B->meteor</li>
+	<li>B->eruption</li>
+	<li>B->cataclysm</li>
+	<li>B->calamity</li>
+	<li>B->immolation</li>
+	
+	<li>C->smasher</li>
+	<li>C->destroyer</li>
+	<li>C->breaker</li>
+	<li>C->shatterer</li>
+	<li>C->crusher</li>
+	<li>C->annihilator</li>
+	<li>C->demolisher</li>
+	<li>C->onslaught</li>
+	<li>C->fracturer</li>
+	<li>C->ruiner</li>
+	<li>C->devastator</li>
+	<li>C->decimator</li>
+	<li>C->obliterator</li>
+	<li>C->pulveriser</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<RulePackDef>
+    <defName>BotchJob_WeaponNamerCraghammer</defName>
+    <rulePack>
+      <rulesStrings>
+      <li>r_weapon_name(p=2)->[A] [B]</li>
+	   <li>r_weapon_name(p=1)->[B]</li>
+ 	<li>r_weapon_name(p=2)->[A] [C]</li>
+
+	<li>A->stone</li>
+	<li>A->boulder</li>
+	<li>A->mountain</li>
+	<li>A->monolith</li>
+	<li>A->tectonic</li>
+	<li>A->shale</li>
+	<li>A->rock</li>
+	<li>A->crystal</li>
+	<li>A->diamond</li>
+	<li>A->granite</li>
+	<li>A->slate</li>
+	<li>A->gravel</li>
+	<li>A->cliff</li>
+	<li>A->ridge</li>
+	<li>A->earth</li>
+	<li>A->formation</li>
+	<li>A->terra</li>
+	<li>A->dreg</li>
+	<li>A->node</li>
+	<li>A->precipice</li>
+	<li>A->mineral</li>
+	<li>A->ore</li>
+	<li>A->iron</li>
+	<li>A->rubble</li>
+	<li>A->cave</li>
+	<li>A->core</li>
+	<li>A->seismic</li>
+	<li>A->basalt</li>
+	<li>A->formation</li>
+	<li>A->ebon</li>
+	<li>A->crater</li>
+	<li>A->cavern</li>
+	<li>A->quartz</li>
+	<li>A->onyx</li>
+	<li>A->obsidian</li>
+
+	<li>B->shard</li>
+	<li>B->fragment</li>
+	<li>B->remnant</li>
+	<li>B->tremor</li>
+	<li>B->quake</li>
+	<li>B->tumult</li>
+	<li>B->fissure</li>
+	<li>B->shockwave</li>
+	<li>B->landslide</li>
+	<li>B->aftershock</li>
+	<li>B->cataclysm</li>
+	<li>B->calamity</li>
+	<li>B->upheaval</li>
+	<li>B->temblor</li>
+	
+	<li>C->shaper</li>
+	<li>C->dredger</li>
+	<li>C->excavator</li>
+	<li>C->speaker</li>
+	<li>C->destroyer</li>
+	<li>C->breaker</li>
+	<li>C->shatterer</li>
+	<li>C->whisperer</li>
+	<li>C->delver</li>
+	<li>C->buster</li>
+	<li>C->seeker</li>
+	<li>C->fracturer</li>
+	<li>C->ruiner</li>
+	<li>C->demolisher</li>
+	<li>C->caller</li>
+	<li>C->splitter</li>
+	<li>C->divider</li>
+	<li>C->breacher</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<RulePackDef>
+    <defName>BotchJob_WeaponNamerVerdantBow</defName>
+    <rulePack>
+      <rulesStrings>
+      <li>r_weapon_name(p=2)->[A]'s [B]</li>
+	   <li>r_weapon_name(p=1)->[B]</li>
+ 	<li>r_weapon_name(p=2)->[C] [B]</li>
+
+	<li>A->nature</li>
+	<li>A->forest</li>
+	<li>A->thicket</li>
+	<li>A->woodland</li>
+	<li>A->wildwood</li>
+	<li>A->meadow</li>
+	<li>A->prairie</li>
+	<li>A->steppe</li>
+	<li>A->grassland</li>
+	<li>A->wind</li>
+	<li>A->sun</li>
+	<li>A->willow</li>
+	<li>A->earth</li>
+	<li>A->wild</li>
+	<li>A->primal</li>
+	<li>A->tree</li>
+	<li>A->summer</li>
+	<li>A->spring</li>
+	<li>A->hunter</li>
+	<li>A->druid</li>
+	<li>A->soothsayer</li>
+	<li>A->briar</li>
+	<li>A->thorn</li>
+	<li>A->bramble</li>
+	<li>A->season</li>
+	<li>A->glade</li>
+	<li>A->vale</li>
+
+	<li>B->bounty</li>
+	<li>B->grace</li>
+	<li>B->devotion</li>
+	<li>B->warmth</li>
+	<li>B->ardor</li>
+	<li>B->refuge</li>
+	<li>B->sanctuary</li>
+	<li>B->benevolence</li>
+	<li>B->comfort</li>
+	<li>B->heart</li>
+	<li>B->spirit</li>
+	<li>B->stride</li>
+	<li>B->harmony</li>
+	<li>B->allure</li>
+	<li>B->dream</li>
+	<li>B->serenity</li>
+	<li>B->tranquility</li>
+	<li>B->blessing</li>
+	<li>B->essence</li>
+	<li>B->vision</li>
+	<li>B->kinship</li>
+	<li>B->melody</li>
+	<li>B->expanse</li>
+	<li>B->affinity</li>
+	<li>B->repose</li>
+	<li>B->harvest</li>
+	<li>B->tribute</li>
+	<li>B->favor</li>
+	<li>B->melody</li>
+	<li>B->boon</li>
+	<li>B->empathy</li>
+	<li>B->echo</li>
+	<li>B->instinct</li>
+	<li>B->accord</li>
+	<li>B->unity</li>
+	<li>B->succor</li>
+	<li>B->chorus</li>
+	<li>B->murmur</li>
+	<li>B->clarity</li>
+	<li>B->cunning</li>
+	<li>B->renewal</li>
+
+	<li>C->druidic</li>
+	<li>C->natural</li>
+	<li>C->viridian</li>
+	<li>C->sunblessed</li>
+	<li>C->earthbound</li>
+	<li>C->leafy</li>
+	<li>C->emerald</li>
+	<li>C->flourishing</li>
+
+
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<RulePackDef>
+    <defName>BotchJob_WeaponNamerGildedArquebus</defName>
+    <rulePack>
+      <rulesStrings>
+      <li>r_weapon_name(p=2)->[A] [B]</li>
+	   <li>r_weapon_name(p=1)->[C]</li>
+ 	<li>r_weapon_name(p=2)->[A] [C]</li>
+
+	
+	<li>A->golden</li>
+	<li>A->distinguished</li>
+	<li>A->burnished</li>
+	<li>A->refined</li>
+	<li>A->ceremonial</li>
+	<li>A->black powder</li>
+	<li>A->regal</li>
+	<li>A->esteemed</li>
+	<li>A->aristocratic</li>
+	<li>A->cultured</li>
+	<li>A->dignified</li>
+	<li>A->courtly</li>
+	<li>A->venerable</li>
+	<li>A->noble</li>
+	<li>A->sovereign</li>
+	<li>A->acclaimed</li>
+	<li>A->stately</li>
+	<li>A->ornate</li>
+	<li>A->eminent</li>
+	<li>A->baroque</li>
+	<li>A->antique</li>
+	<li>A->extravagant</li>
+	<li>A->ornamental</li>
+	<li>A->opulent</li>
+	<li>A->elegant</li>
+	<li>A->exquisite</li>
+	<li>A->illustrious</li>
+	<li>A->renowned</li>
+
+        <li>B->longshot</li>
+	<li>B->heirloom</li>
+	<li>B->armament</li>
+	<li>B->hunter</li>
+	<li>B->shooter</li>
+	<li>B->oneshot</li>
+	<li>B->instrument</li>
+	<li>B->smoothbore</li>
+	<li>B->striker</li>
+	<li>B->bolter</li>
+	<li>B->assaulter</li>
+	<li>B->matchlock</li>
+	<li>B->fusil</li>
+	<li>B->bastion</li>
+	<li>B->blaster</li>
+	<li>B->sniper</li>
+	<li>B->slayer</li>
+	<li>B->perforator</li>
+	<li>B->dispatcher</li>
+	<li>B->suppressor</li>
+	<li>B->piercer</li>
+	
+	<li>C->equalizer</li>
+	<li>C->executioner</li>
+	<li>C->longshot</li>
+	<li>C->judicator</li>
+	<li>C->knight slayer</li>
+	<li>C->sharpshooter</li>
+	<li>C->deadeye</li>
+	
+
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<RulePackDef>
+    <defName>BotchJob_WeaponNamerShroudedDagger</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_weapon_name(p=2)->[A] [B]</li>
+      <li>r_weapon_name(p=1)->[C]</li>
+	   <li>r_weapon_name(p=2)->[A] [C]</li>
+	 
+
+        <li>A->rougish</li>
+        <li>A->shadowy</li>
+        <li>A->hidden</li>
+        <li>A->assassin's</li>
+        <li>A->scoundrel's</li>
+	<li>A->blackguard's</li>  
+        <li>A->sneakthief's</li>                                
+        <li>A->miscreant's</li>
+	  <li>A->knave's</li>
+	<li>A->vagabond's</li>
+	<li>A->cloaked</li>
+	<li>A->malicious</li>
+	<li>A->silent</li>
+	<li>A->lethal</li>
+	<li>A->reticent</li>
+	<li>A->shaded</li>
+	  <li>A->veiled</li>
+	<li>A->enshrouded</li>
+	<li>A->rascal's</li>
+	<li>A->phantom's</li>
+	<li>A->obscuring</li>
+	<li>A->furtive</li>
+	<li>A->evasive</li>
+	<li>A->shady</li>
+	<li>A->shrewd</li>
+	<li>A->subtle</li>
+	<li>A->infiltrator's</li>
+	<li>A->twisted</li>
+	<li>A->blinding</li>
+
+	<li>B->edge</li>
+	<li>B->shiv</li>
+	<li>B->dirk</li>
+	<li>B->backstabber</li>
+	<li>B->razor</li>
+	<li>B->shank</li>
+	<li>B->claw</li>
+	<li>B->sting</li>
+	<li>B->fang</li>
+	<li>B->stiletto</li>
+	<li>B->crescent</li>
+	<li>B->slicer</li>
+	<li>B->scalpel</li>
+	<li>B->kris</li>
+	<li>B->cinquedea</li>
+	<li>B->blade</li>
+	<li>B->shard</li>
+	<li>B->carver</li>
+	<li>B->puncturer</li>
+	<li>B->finesse</li>
+	<li>B->gouger</li>
+	<li>B->executioner</li>
+	<li>B->quickblade</li>
+	
+
+	<li>C->backstabber</li>
+	<li>C->bloodletter</li>  
+	<li>C->throatcutter</li>    
+	<li>C->deciever</li>     
+	<li>C->finesse</li>  
+	<li>C->beguiler</li>  
+	<li>C->double crosser</li>  
+	<li>C->requiem</li>  
+	<li>C->heartseeker</li> 
+	<li>C->dirge</li> 
+	<li>C->lament</li> 
+	<li>C->mercy</li> 
+
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

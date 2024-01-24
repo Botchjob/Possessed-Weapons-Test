@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<!-- Patches traits only if Medieval Fantasy Themed Quest Rewards isn't active -->	
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Medieval Fantasy Themed Quest Rewards</li>
+	</mods>
+	<nomatch Class="PatchOperationSequence">
+
+<operations>
+
+
+<!-- ========Sensitivity======== -->
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="PsychicSensitivityUpMajor"]/label</xpath>
+<value>
+<label>major psychic amplifier</label>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+<xpath>/Defs/WeaponTraitDef[defName ="PsychicSensitivityUpMajor"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon will increase the wielders psychic sensitivity by 40%. This only applies when the weapon is held.</description>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="PsychicSensitivityUpMinor"]/label</xpath>
+<value>
+<label>minor psychic amplifier</label>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="PsychicSensitivityUpMinor"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon will increase the wielders psychic sensitivity by 20%. This only applies when the weapon is held.</description>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="PsychicSensitivityDownMajor"]/label</xpath>
+<value>
+<label>major psychic dampener</label>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="PsychicSensitivityDownMajor"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon will decrease the wielders psychic sensitivity by 30%. This only applies when the weapon is held.</description>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="PsychicSensitivityDownMinor"]/label</xpath>
+<value>
+<label>minor psychic dampener</label>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="PsychicSensitivityDownMinor"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon will reduce the wielders psychic sensitivity by 15%. This only applies when the weapon is held.</description>
+</value>
+</li>
+
+
+<!-- ========Thoughts======== -->
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="ThoughtKind"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon is kind and supportive. It whispers kind thoughts to whoever it is bonded with, increasing their mood.</description>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="ThoughtCalm"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon is relaxed and steady. It whispers calming thoughts to whoever it is bonded with, increasing their mood.</description>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="ThoughtMuttering"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon is neurotic and unstable. It mutters mad thoughts to whoever it is bonded with, suppressing their mood.</description>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="ThoughtWailing"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon is highly disturbed and manic. It wails mad notions to whoever it is bonded with, suppressing their mood.</description>
+</value>
+</li>
+
+
+<!-- ======== On Kill======== -->
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="OnKill_PsyfocusGain"]/label</xpath>
+<value>
+<label>soul hunger</label>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="OnKill_PsyfocusGain"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon is hungry for mortal souls. If this weapon kills someone, it will absorb a portion of their soul, restoring 20% of the wielder's psyfocus.</description>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="OnKill_ThoughtGood"]/label</xpath>
+<value>
+<label>bloodlust</label>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="OnKill_ThoughtGood"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon is bloodthirsty and loves nothing more than taking lives. If this weapon kills someone, its joy will be felt by the wielder, making them happier for a few days.</description>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="OnKill_ThoughtBad"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon hates conflict and bloodshed. If this weapon kills someone, its sorrow will be felt by the wielder, reducing their mood for a few days.</description>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="NeedKill"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon finds purpose in bloodshed. If it does not kill for 20 days, its will become restless and angry. This will be felt by the wielder, reducing their mood until the weapon kills again.</description>
+</value>
+</li>
+
+
+<!-- ======== Meditation======== -->
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="PsyfocusMeditationBonus"]/label</xpath>
+<value>
+<label>meditative</label>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="PsyfocusMeditationBonus"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon is naturally meditative and helps its wielder focus during meditation. The wielder gains an extra 10% psyfocus per day whilst meditating, as long as the weapon is held.</description>
+</value>
+</li>
+
+
+<!-- ======== Pain/speed/hunger======== -->
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="NoPain"]/label</xpath>
+<value>
+<label>pain absorption</label>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="NoPain"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon revels in agony, as long as the weapon is held it will take the pain on behalf of the wielder.</description>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/HediffDef[defName ="NoPain"]/description</xpath>
+<value>
+<description>No pain is felt as it is being absorbed by the wielded weapon.</description>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="SpeedBoost"]/label</xpath>
+<value>
+<label>haste</label>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="SpeedBoost"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon is energetic and hyperactive. It confers this onto the wielder, making them move 15% faster as long as the weapon is held.</description>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/HediffDef[defName ="SpeedBoost"]/description</xpath>
+<value>
+<description>Movement is sped up by the influence of a wielded weapon.</description>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="HungerMaker"]/label</xpath>
+<value>
+<label>gluttonous</label>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="HungerMaker"]/description</xpath>
+<value>
+<description>Although long dead, the spirit residing within this weapon was a glutton for food in life. This will be felt by whoever bonds with it, increasing their hunger rate by 50%.</description>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/HediffDef[defName ="HungerMaker"]/description</xpath>
+<value>
+<description>Hunger is increased by the influence of a wielded weapon.</description>
+</value>
+</li>
+
+
+<!-- ======== Heat recovery======== -->
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="NeuralHeatRecoveryGain"]/label</xpath>
+<value>
+<label>neural heat absorption</label>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="NeuralHeatRecoveryGain"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon will absorb some of the neural heat generated by it's wielder, increasing neural heat dissipation by 0.15 per second.</description>
+</value>
+</li>
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/HediffDef[defName ="NeuralHeatRecoveryGain"]/description</xpath>
+<value>
+<description>neural heat dissipation is improved by the influence of a wielded weapon.</description>
+</value>
+</li>
+
+
+<!-- ======== Other======== -->
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="Jealous"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon becomes angry when the bonded individual uses another weapon. This will be felt by the bonded person, reducing their mood.</description>
+</value>
+</li>
+
+
+<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationReplace">
+
+<xpath>/Defs/WeaponTraitDef[defName ="NeverBond"]/description</xpath>
+<value>
+<description>The spirit residing within this weapon does not form bonds like others do, allowing anyone to wield it.</description>
+</value>
+</li>
+
+</operations>
+
+</nomatch>
+
+</Operation>
+
+
+
+</Patch>

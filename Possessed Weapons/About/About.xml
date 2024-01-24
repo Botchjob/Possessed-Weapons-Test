@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Possessed Weapons</name>
+	<author>Botch_Job</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>BotchJob.PossessedWeapons</packageId>
+	<description>
+An expansion to the "Possessed" weapons from Medieval Fantasy Themed Quest Rewards. Adds several more possessed weapons to the game as quest rewards.
+	</description>
+	<loadAfter>
+		<li>BotchJob.medievalfantasyquestrewards</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+  	</loadAfter>
+	
+</ModMetaData>

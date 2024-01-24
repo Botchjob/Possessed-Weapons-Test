@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<!--=============================== Gauntlet ================================-->
+
+
+ <HediffDef>
+    <defName>BotchJob_RockSmash</defName>
+    <label>cripple</label>
+    <description>Injuries to limbs caused by blunt impact, reducing movement speed.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>400~800</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+	<stages>
+	 <li>
+	<capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+	<DamageDef>
+    	<defName>BotchJob_RockSmash</defName>
+	<workerClass>DamageWorker_AddInjury</workerClass>
+	<label>crush</label>
+	<hasForcefulImpact>true</hasForcefulImpact>
+	<makesBlood>true</makesBlood>
+	<canInterruptJobs>true</canInterruptJobs>
+	<externalViolence>true</externalViolence>
+	<deathMessage>{0} has been crushed to death.</deathMessage>
+		<hediff>Crush</hediff>
+	<armorCategory>Blunt</armorCategory>
+	<minDamageToFragment>15</minDamageToFragment>
+	<defaultDamage>25</defaultDamage>
+	<defaultArmorPenetration>0</defaultArmorPenetration>
+	<explosionHeatEnergyPerCell>1</explosionHeatEnergyPerCell>
+	<explosionCellFleck>DustPuffThick</explosionCellFleck>
+	<explosionColorCenter>(0.87, 0.66, 0.47)</explosionColorCenter>
+	<explosionColorEdge>(0.95, 0.69, 0.45)</explosionColorEdge>
+	<soundExplosion>BuildingDestroyed_Stone_Big</soundExplosion>
+	<combatLogRules>Damage_Bomb</combatLogRules>
+	<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	 <additionalHediffs>
+      <li>
+        <hediff>BotchJob_RockSmash</hediff>
+        <severityPerDamageDealt>0.1</severityPerDamageDealt>
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+	<li>
+        <hediff>DirtInEyes</hediff>
+        <severityPerDamageDealt>0.1</severityPerDamageDealt>
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+
+</DamageDef>
+
+
+<!--=============================== Flintlock ================================-->
+
+	<HediffDef>
+    <defName>GhostlySickness</defName>
+    <label>ghostly sickness</label>
+    <description>Ghostly crystal shards in the bloodstream causing vomiting and disorientation until they dissipate.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <makesSickThought>true</makesSickThought>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>500~1000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <vomitMtbDays>0.00006</vomitMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.6</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.6</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+    <DamageDef>
+    	<defName>BotchJob_GhostBlast</defName>
+	<workerClass>DamageWorker_AddInjury</workerClass>
+	<label>laceration</label>
+	<hasForcefulImpact>true</hasForcefulImpact>
+	<makesBlood>true</makesBlood>
+	<canInterruptJobs>true</canInterruptJobs>
+	<externalViolence>true</externalViolence>
+	<deathMessage>{0} has been shot to death.</deathMessage>
+		<hediff>Cut</hediff>
+	<armorCategory>Sharp</armorCategory>
+	<minDamageToFragment>15</minDamageToFragment>
+	<defaultDamage>14</defaultDamage>
+	<defaultArmorPenetration>0</defaultArmorPenetration>
+	<explosionHeatEnergyPerCell>1</explosionHeatEnergyPerCell>
+	<explosionCellFleck>AirPuff</explosionCellFleck>
+	<explosionColorCenter>(0.3, 0.9, 0.7)</explosionColorCenter>
+	<explosionColorEdge>(0.2, 0.9, 0.8)</explosionColorEdge>
+	<soundExplosion>BulletImpact_Ground</soundExplosion>
+	<combatLogRules>Damage_Bomb</combatLogRules>
+	<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	 <additionalHediffs>
+      <li>
+        <hediff>GhostlySickness</hediff>
+        <severityPerDamageDealt>0.1</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+
+</DamageDef>
+
+<!--=============================== Javelin ================================-->
+
+
+  <DamageDef>
+    <defName>BotchJob_LightningBlast</defName>
+    <label>shock</label>
+	<harmsHealth>true</harmsHealth>
+    <makesBlood>false</makesBlood>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shocked to death.</deathMessage>
+	<minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>15</defaultDamage>
+	<hediff>Burn</hediff>
+    <explosionCellFleck>BlastEMP</explosionCellFleck>
+    <soundExplosion>Explosion_EMP</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+	<additionalHediffs>
+      <li>
+        <hediff>BotchJob_JavelinShock</hediff>
+		 <severityPerDamageDealt>0.05</severityPerDamageDealt>
+      </li>
+	  </additionalHediffs>
+  </DamageDef>
+
+  
+  <HediffDef>
+    <defName>BotchJob_JavelinShock</defName>
+    <label>system shock</label>
+    <description>A brief shock to the system, causing slowdown or loss of consciousness.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>400~800</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+	<stages>
+	 <li>
+	<capMods>
+		   <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+</Defs>
